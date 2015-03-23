@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="meuestilo.css">
+<title>Cadastro</title>
+</head>
+<body>
+
+	<form action="servlet" method="post">
+			<h1>Cadastro Cliente</h1>
+			
+			<label>Nome</label>
+			<input type="text" name = "nome">
+			<p>
+			<label>Ra</label>
+			<input type ="text" name="ra">
+			<p>
+			<label>Sexo</label>
+			<input type="radio" name ="sexo" value = "Masculino">masculino
+			<input type="radio" name ="sexo" value = "Feminino">feminino<br>
+			
+			<p>
+			<label>Estado</label>
+			<select name="estado">
+				<option  value =""></option>
+				<option value = "MS">Mato Grosso do Sul</option>
+				<option  value ="SP">Sao Paulo</option>
+			
+			</select>
+			<p>
+			<input type="Submit" value ="Salvar"/>
+	
+	</form>
+
+			<form action="servlet" method ="get">
+				<input type="submit" value="Listar"/>
+			</form>		
+	
+	
+
+</body>
+</html>
